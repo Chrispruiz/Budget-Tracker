@@ -3,6 +3,7 @@
   ## Description: 
   Budget-Tracker is a way for users to be able to track their money whether they have an internet connection or not.
   [Heroku Deployment](https://enigmatic-sands-93879.herokuapp.com/)
+
   ![Image of Deployment](https://github.com/Chrispruiz/Budget-Tracker/blob/main/public/images/deployimage.png?raw=true)
   ## Table of Contents
   * [Installation](#installation) 
@@ -18,11 +19,17 @@
   
   ## Tools:
   MongoDB
+
   Node.js
+
   IndexedDB
+
   Express.js
+
   MongoDB
+
   Mongoose
+  
   Heroku
 
   ## Usage:
