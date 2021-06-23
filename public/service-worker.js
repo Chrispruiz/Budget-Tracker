@@ -3,12 +3,11 @@ const VERSION = "version_01";
 const CACHE_NAME = APP_PREFIX + VERSION;
 
 const FILES_TO_CACHE = [
-  "/",
   "/index.html",
   "/css/styles.css",
   "/js/index.js",
   "/js/idb.js",
-  "/manifest.json",
+  "/manifest.webmanifest",
   "/icons/icon-512x512.png",
   "/icons/icon-384x384.png",
   "/icons/icon-192x192.png",
@@ -52,7 +51,7 @@ self.addEventListener("activate", function (e) {
   e.waitUntil(
     caches.keys().then(function (keyList) {
       // `keyList` contains all cache names under your username.github.io
-      // filter out ones that has this app prefix to create keeplistß
+      // filter out ones that has this app prefix to create keeplist
       let cacheKeeplist = keyList.filter(function (key) {
         return key.indexOf(APP_PREFIX);
       });
